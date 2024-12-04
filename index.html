@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Slam Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slam-book">
+        <header>
+            <div class="profile-img">
+                <img src="profile.jpg" alt="Profile Picture">
+            </div>
+            <div class="name-section">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" placeholder="Your Nickname">
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+            </div>
+        </header>
+        <main>
+            <section class="just-me">
+                <h2>Just Me</h2>
+                <div>
+                    <label>Birthday:</label>
+                    <input type="date" placeholder="Your Birthday">
+                </div>
+                <div>
+                    <label>Age:</label>
+                    <input type="number" placeholder="Your Age">
+                </div>
+                <div>
+                    <label>Address:</label>
+                    <input type="text" placeholder="Your Address">
+                </div>
+                <div>
+                    <label>CP #:</label>
+                    <input type="text" placeholder="Your Contact Number">
+                </div>
+                <div>
+                    <label>Best Hobby:</label>
+                    <input type="text" placeholder="Your Best Hobby">
+                </div>
+            </section>
+            <section class="favorites">
+                <h2>Favorites</h2>
+                <div>
+                    <label>Color:</label>
+                    <input type="text" placeholder="Your Favorite Color">
+                </div>
+                <div>
+                    <label>Fruit:</label>
+                    <input type="text" placeholder="Your Favorite Fruit">
+                </div>
+                <div>
+                    <label>Celebrity:</label>
+                    <input type="text" placeholder="Your Favorite Celebrity">
+                </div>
+                <div>
+                    <label>Food:</label>
+                    <input type="text" placeholder="Your Favorite Food">
+                </div>
+                
+                <!-- Moved Movie Genre Section -->
+                <h2>Favorite Movie Genre:</h2>
+                <div class="movie-genre">
+                    <label><input type="checkbox" name="genre" value="Action"> Action</label>
+                    <label><input type="checkbox" name="genre" value="Comedy"> Comedy</label>
+                    <label><input type="checkbox" name="genre" value="Drama"> Drama</label>
+                    <label><input type="checkbox" name="genre" value="Horror"> Horror</label>
+                    <label><input type="checkbox" name="genre" value="Romance"> Romance</label>
+                    <label><input type="checkbox" name="genre" value="Sci-Fi"> Sci-Fi</label>
+                </div>
+
+                <!-- Zodiac Sign Dropdown -->
+                <h2>Zodiac Sign:</h2>
+                <select name="zodiac">
+                    <option value="Aries">Aries</option>
+                    <option value="Taurus">Taurus</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Sagittarius">Sagittarius</option>
+                    <option value="Capricorn">Capricorn</option>
+                    <option value="Aquarius">Aquarius</option>
+                    <option value="Pisces">Pisces</option>
+                </select>
+            </section>
+            <section class="fun-questions">
+                <h2>Describe Yourself in 3 Words</h2>
+                <textarea rows="3" placeholder="Write here..."></textarea>
+                <h2>Songs You Love Right Now</h2>
+                <textarea rows="3" placeholder="Songs and Dedications"></textarea>
+                <h2>What are Your 3 Ifs?</h2>
+                <textarea rows="3" placeholder="Write your 3 Ifs here..."></textarea>
+                <h2>Biggest Mistake</h2>
+                <textarea rows="2" placeholder="Write about it here..."></textarea>
+            </section>
+        </main>
+        <footer>
+            <button id="save-btn">Save</button>
+            <button id="create-btn">Create Slam Book</button>
+            <p>&copy; Cruz, Guarin, Gumarang</p>
+        </footer>
+    </div>
+</body>
+</html>
